@@ -1,0 +1,69 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        section {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foro de Mascotas</h1>
+    </header>
+
+    <section>
+        <h2>Bienvenido al Foro</h2>
+        <p>Únete a la comunidad para discutir sobre tus mascotas favoritas.</p>
+    </section>
+
+    <section>
+        <h2>Temas Recientes</h2>
+        <!-- Aquí puedes agregar una lista de temas recientes del foro -->
+        <ul>
+            <li><a href="#">Consejos para cuidar a tu perro en verano</a></li>
+            <li><a href="#">Comparte fotos de tus gatos adorables</a></li>
+            <!-- Agrega más temas según sea necesario -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>Publicar en el Foro</h2>
+        <!-- Aquí puedes agregar un formulario para que los usuarios publiquen en el foro -->
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+            <button type="submit">Publicar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Foro de Mascotas</p>
+    </footer>
+</body>
+</html>

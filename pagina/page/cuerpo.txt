@@ -1,0 +1,226 @@
+logo.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a  class="navbar-brand" href="#">The Uncanny Counter</a> 
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporadas <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://doramasflix.co/doramas/the-uncanny-counter">Capitulos</a></li>
+          <li><a href="https://doramasmp4.io/doramas/the-uncanny-counter">Otras Opciones</a></li>
+        </ul>
+      </li>
+      <li><a href="personajes.html">Reparto</a></li>
+      <li><a href="https://www.youtube.com/watch?v=-HMRcXFrrq8">Canciones </a>
+      </li> 
+      <li><button onclick="window.location.href='lista.html'">Otras series </button></li>
+      <li><a href="fomulario.html">Formulario</a></li>
+      <li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
+    </ul>
+    
+  </div>
+</nav>
+  
+<div class="container">
+    <h1>The Uncanny Counter</h1>
+    <font face="consolas"><p> "The Uncanny Counter" es una serie de televisión surcoreana que se basa en un webtoon llamado "Amazing Rumor" de Jang Yi.
+         La serie se emitió por primera vez en 2020 y se convirtió en un gran éxito.</p>
+         La trama de la serie gira en torno a un grupo de cuatro jóvenes que trabajan en una tienda de fideos como tapadera para su verdadera identidad como "contadores".
+          Estos contadores son seres con habilidades especiales que cazan y atrapan a espíritus malignos conocidos como "malvados espíritus".
+          Cada uno de ellos tiene habilidades únicas que les permiten luchar contra estas criaturas sobrenaturales y mantener a raya la amenaza que representan para la sociedad. <br>
+         Los contadores son liderados por un hombre llamado "So Mun", quien se une al grupo después de un trágico accidente que le cambia la vida y le otorga habilidades especiales.
+     A medida que se sumerge más en el mundo de los contadores, descubre oscuros secretos y conspiraciones que rodean a los malvados espíritus, su origen y el propósito de los contadores. <br>
+     La serie combina elementos de acción, misterio, fantasía y drama, ofreciendo una narrativa emocionante y personajes carismáticos que luchan contra las fuerzas sobrenaturales mientras enfrentan sus propios desafíos personales.
+      "The Uncanny Counter" ha sido elogiada por su trama intrigante y sus efectos visuales impresionantes, y ha ganado popularidad por su capacidad para mezclar el género de superhéroes con elementos de terror y thriller. <br>
+    </font> <br>
+</div>
+
+    <div class="logo">
+        <img src="somuna.jpg" alt="Logo de Mi Sitio Web">
+    </div>
+
+</body>
+</html>
+
+fomulario.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <h1>Registro</h1>
+    <form id="formulario" onsubmit="return mostrarDatos()">
+       <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+        </div>
+        <div>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" class="form-control" id="correo" placeholder="Email" required>
+        </div>
+        <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea type="text"  id="mensaje" class="form-control" name="mensaje" rows="1" required></textarea>
+       
+        </div>
+       
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="datosMostrados" style="display: none;">
+        <h4>Datos Ingresados con Exito</h4>
+        <p>Nombre: <span id="nombreMostrado"></span></p>
+        <p>Correo electrónico: <span id="correoMostrado"></span></p>
+        <p>Mensaje: <span id="mensajeMostrado"></span></p>
+    </div>
+
+    <script>
+        function mostrarDatos() {
+            var nombre = document.getElementById("nombre").value;
+            var correo = document.getElementById("correo").value;
+            var mensaje = document.getElementById("mensaje").value;
+
+            document.getElementById("nombreMostrado").textContent = nombre;
+            document.getElementById("correoMostrado").textContent = correo;
+            document.getElementById("mensajeMostrado").textContent = mensaje;
+
+            document.getElementById("datosMostrados").style.display = "block";
+            document.getElementById("formulario").style.display = "none";
+
+            return false; // Evitar que el formulario se envíe
+        }
+    </script>
+
+<style>
+    body {
+        background-color: #5ea1ce; 
+    }
+</style>
+</body>
+</html>
+
+
+personajes.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personajes de The Uncanny Counter</title>
+</head>
+<body>
+    <h1>Personajes de The Uncanny Counter</h1>
+    
+    <ul>
+        <li>
+            <h2>Jo Byung-gyu</h2>
+            <p>So Moon.</p>
+            <img src="so.webp" alt="So Moon">
+        </li>
+        <li>
+            <h2>Sejeong</h2>
+            <p>Do Ha-na.</p>
+            <img src="hana.jpeg" alt="DO Ha-na">
+        </li>
+        <li>
+            <h2>Yoo Joon Sang</h2>
+            <p>Ga Mo-tack.</p>
+            <img src="mo.jpeg" alt="DO Ha-na">
+        </li>
+        <li>
+            <h2>Yeom Hye-ran</h2>
+            <p>Chu Mae Ok.</p>
+            <img src="chu.jpeg" alt="DO Ha-na">
+        </li>
+        
+    </ul>
+    <style>
+        body {
+            background-color: #5ea1ce; 
+        }
+    </style>
+</body>
+</html>
+
+lista.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Series Coreanas</h2>
+  <div class="list-group">
+   
+    <a href="https://doramasflix.co/doramas/twinkling-watermelon" class="list-group-item">
+        <h3 class="list-group-item-heading">Twinkling Watermelon</h3>
+      <p class="list-group-item-text">Un estudiante CODA (hijo de un adulto sordo) nacido con un don para la música aterriza en un lugar desconocido
+        después de viajar en el tiempo a través de una tienda de música sospechosa. 
+       Allí forma la banda Watermelon Sugar con otros jóvenes misteriosos.</p>
+    </a>
+    
+    <a href="https://doramasflix.co/doramas/a-good-day-to-be-a-dog" class="list-group-item">
+      <h4 class="list-group-item-heading">A Good Day to be a Dog</h4>
+      <p class="list-group-item-text">¡Más lindo que ayer! Hae-na, que seguramente heredará la maldición familiar de convertirse en un perro después de recibir su primer beso.
+         La única forma de romper la maldición es recibir un segundo beso.
+         El problema es que el chico que le dio a Hae-na su primer beso le tiene miedo a los perros.</p>
+    </a>
+  </div>
+</div>
+
+<style>
+    body {
+        background-color: #5ea1ce; 
+    }
+</style>
+</body>
+</html>
+
+diseño.css
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px; /* Establece el ancho de la imagen */
+    height: 100px; /* Establece la altura de la imagen */
+}
+
+.logo h1 {
+    font-size: 24px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
